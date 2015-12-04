@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69B947191BFF413E002B40B6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B947181BFF413E002B40B6 /* QuartzCore.framework */; };
 		69F3C1201BFB0E79008391B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F3C11F1BFB0E79008391B7 /* AppDelegate.swift */; };
 		69F3C1221BFB0E79008391B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F3C1211BFB0E79008391B7 /* ViewController.swift */; };
 		69F3C1251BFB0E79008391B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69F3C1231BFB0E79008391B7 /* Main.storyboard */; };
@@ -15,7 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		69F3C11C1BFB0E79008391B7 /* Button_ZDY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Button_ZDY.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69B947181BFF413E002B40B6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		69F3C11C1BFB0E79008391B7 /* Touch_Show_View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Touch_Show_View.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69F3C11F1BFB0E79008391B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69F3C1211BFB0E79008391B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		69F3C1241BFB0E79008391B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69B947191BFF413E002B40B6 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +41,7 @@
 		69F3C1131BFB0E79008391B7 = {
 			isa = PBXGroup;
 			children = (
+				69B947181BFF413E002B40B6 /* QuartzCore.framework */,
 				69F3C11E1BFB0E79008391B7 /* Button_ZDY */,
 				69F3C11D1BFB0E79008391B7 /* Products */,
 			);
@@ -46,7 +50,7 @@
 		69F3C11D1BFB0E79008391B7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				69F3C11C1BFB0E79008391B7 /* Button_ZDY.app */,
+				69F3C11C1BFB0E79008391B7 /* Touch_Show_View.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,9 +71,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		69F3C11B1BFB0E79008391B7 /* Button_ZDY */ = {
+		69F3C11B1BFB0E79008391B7 /* Touch_Show_View */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 69F3C12E1BFB0E79008391B7 /* Build configuration list for PBXNativeTarget "Button_ZDY" */;
+			buildConfigurationList = 69F3C12E1BFB0E79008391B7 /* Build configuration list for PBXNativeTarget "Touch_Show_View" */;
 			buildPhases = (
 				69F3C1181BFB0E79008391B7 /* Sources */,
 				69F3C1191BFB0E79008391B7 /* Frameworks */,
@@ -79,9 +83,9 @@
 			);
 			dependencies = (
 			);
-			name = Button_ZDY;
+			name = Touch_Show_View;
 			productName = Button_ZDY;
-			productReference = 69F3C11C1BFB0E79008391B7 /* Button_ZDY.app */;
+			productReference = 69F3C11C1BFB0E79008391B7 /* Touch_Show_View.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +103,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 69F3C1171BFB0E79008391B7 /* Build configuration list for PBXProject "Button_ZDY" */;
+			buildConfigurationList = 69F3C1171BFB0E79008391B7 /* Build configuration list for PBXProject "Touch_Show_View" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -112,7 +116,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				69F3C11B1BFB0E79008391B7 /* Button_ZDY */,
+				69F3C11B1BFB0E79008391B7 /* Touch_Show_View */,
 			);
 		};
 /* End PBXProject section */
@@ -251,8 +255,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Button_ZDY/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "zhhz.Button-ZDY";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "zhhz.Touch-Show-View";
+				PRODUCT_NAME = Touch_Show_View;
 			};
 			name = Debug;
 		};
@@ -262,15 +266,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Button_ZDY/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "zhhz.Button-ZDY";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "zhhz.Touch-Show-View";
+				PRODUCT_NAME = Touch_Show_View;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		69F3C1171BFB0E79008391B7 /* Build configuration list for PBXProject "Button_ZDY" */ = {
+		69F3C1171BFB0E79008391B7 /* Build configuration list for PBXProject "Touch_Show_View" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				69F3C12C1BFB0E79008391B7 /* Debug */,
@@ -279,13 +283,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		69F3C12E1BFB0E79008391B7 /* Build configuration list for PBXNativeTarget "Button_ZDY" */ = {
+		69F3C12E1BFB0E79008391B7 /* Build configuration list for PBXNativeTarget "Touch_Show_View" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				69F3C12F1BFB0E79008391B7 /* Debug */,
 				69F3C1301BFB0E79008391B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

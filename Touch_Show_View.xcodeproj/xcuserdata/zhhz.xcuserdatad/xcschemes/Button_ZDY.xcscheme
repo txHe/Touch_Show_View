@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "69F3C11B1BFB0E79008391B7"
-               BuildableName = "Button_ZDY.app"
-               BlueprintName = "Button_ZDY"
-               ReferencedContainer = "container:Button_ZDY.xcodeproj">
+               BuildableName = "Touch_Show_View.app"
+               BlueprintName = "Touch_Show_View"
+               ReferencedContainer = "container:Touch_Show_View.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "69F3C11B1BFB0E79008391B7"
-            BuildableName = "Button_ZDY.app"
-            BlueprintName = "Button_ZDY"
-            ReferencedContainer = "container:Button_ZDY.xcodeproj">
+            BuildableName = "Touch_Show_View.app"
+            BlueprintName = "Touch_Show_View"
+            ReferencedContainer = "container:Touch_Show_View.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "69F3C11B1BFB0E79008391B7"
-            BuildableName = "Button_ZDY.app"
-            BlueprintName = "Button_ZDY"
-            ReferencedContainer = "container:Button_ZDY.xcodeproj">
+            BuildableName = "Touch_Show_View.app"
+            BlueprintName = "Touch_Show_View"
+            ReferencedContainer = "container:Touch_Show_View.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "69F3C11B1BFB0E79008391B7"
-            BuildableName = "Button_ZDY.app"
-            BlueprintName = "Button_ZDY"
-            ReferencedContainer = "container:Button_ZDY.xcodeproj">
+            BuildableName = "Touch_Show_View.app"
+            BlueprintName = "Touch_Show_View"
+            ReferencedContainer = "container:Touch_Show_View.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
