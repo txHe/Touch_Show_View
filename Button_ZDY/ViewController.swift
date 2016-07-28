@@ -2,19 +2,29 @@
 //  ViewController.swift
 //  Button_ZDY
 //
-//  Created by zhhz on 15/11/17.
-//  Copyright © 2015年 zhhz. All rights reserved.
+//  Created by txHe on 15/11/17.
+//  Copyright © 2015年 txHe. All rights reserved.
 //
+
+/*
+ *
+ * 主要实现了一个自定义键盘输入法滑动切换功能
+ * 1.ExpandView - 键盘按键选择视图
+ * 2.ExpandLabelView - 每个输入法对应的按键视图
+ * 3.BackImageView - 按键背景图，添加一种按键效果
+ * 4.Straight_Line - 分割线，自绘制，分隔各输入法视图按键
+ *
+ */
 
 import UIKit
 import QuartzCore
 
-var KEY_CORNER_RADIUS:CGFloat = 6.0
+let KEY_CORNER_RADIUS:CGFloat = 6.0
 
-class ViewController: UIViewController {
-
-    
-    override func viewDidLoad() {
+class ViewController: UIViewController
+{
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.blackColor();
         
@@ -28,7 +38,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -36,7 +47,7 @@ class ViewController: UIViewController {
     
 }
 
-/*扩展view是有三个子视图构成(ExpandLabelView)*/
+/*----------------扩展view是有三个子视图构成(ExpandLabelView)------------*/
 class ExpandView:UIView
 {
     var titles = ["1","2","3"]
@@ -194,7 +205,8 @@ class ExpandView:UIView
     }
     
 }
-//定制一个View
+
+/*-------------自定制的一个按键view-----------------*/
 class ExpandLabelView:UIView
 {
     var title:NSString = "纵横输入法"
@@ -240,6 +252,7 @@ class ExpandLabelView:UIView
     }
 }
 
+/*------------按键触碰下添加的按键背景图------------*/
 class BackImageView: UIView {
     
     var title = ""
@@ -277,30 +290,7 @@ class BackImageView: UIView {
     }
 }
 
-
-//背景图，为按键添加“效果”
-func BackImage()->UIImage
-{
-    let rect:CGRect = CGRectMake(0.0, 0.0, 1.0, 1.0)
-    UIGraphicsBeginImageContext(rect.size)
-    
-    let context:CGContextRef = UIGraphicsGetCurrentContext()!
-    
-    //CGContextSetFillColorWithColor(context, UIColor(red: 209/255.0, green: 213/255.0, blue: 219/255.0, alpha: 0.8).CGColor)
-    CGContextSetFillColorWithColor(context, UIColor.lightGrayColor().CGColor)
-    CGContextFillRect(context, rect)
-    //var roundedRect:UIBezierPath = UIBezierPath(roundedRect: rect, cornerRadius: KEY_CORNER_RADIUS)
-    //UIColor(white: 0, alpha: 0.5).setFill()
-    //UIColor.lightGrayColor().setFill()
-    //roundedRect .fillWithBlendMode(kCGBlendModeNormal, alpha: 1)
-    
-    let image:UIImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    return image;
-}
-
-//绘制分割线
+/*----------------绘制按键之间的分割线-----------------*/
 class Straight_Line:UIView
 {
     override init(frame: CGRect) {
@@ -333,3 +323,27 @@ class Straight_Line:UIView
         CGContextStrokePath(context);
     }
 }
+
+/*
+ //背景图，为按键添加“效果”
+ func BackImage()->UIImage
+ {
+ let rect:CGRect = CGRectMake(0.0, 0.0, 1.0, 1.0)
+ UIGraphicsBeginImageContext(rect.size)
+ 
+ let context:CGContextRef = UIGraphicsGetCurrentContext()!
+ 
+ //CGContextSetFillColorWithColor(context, UIColor(red: 209/255.0, green: 213/255.0, blue: 219/255.0, alpha: 0.8).CGColor)
+ CGContextSetFillColorWithColor(context, UIColor.lightGrayColor().CGColor)
+ CGContextFillRect(context, rect)
+ //var roundedRect:UIBezierPath = UIBezierPath(roundedRect: rect, cornerRadius: KEY_CORNER_RADIUS)
+ //UIColor(white: 0, alpha: 0.5).setFill()
+ //UIColor.lightGrayColor().setFill()
+ //roundedRect .fillWithBlendMode(kCGBlendModeNormal, alpha: 1)
+ 
+ let image:UIImage = UIGraphicsGetImageFromCurrentImageContext();
+ UIGraphicsEndImageContext();
+ 
+ return image;
+ }
+ */

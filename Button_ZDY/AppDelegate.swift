@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Button_ZDY
 //
-//  Created by zhhz on 15/11/17.
-//  Copyright © 2015年 zhhz. All rights reserved.
+//  Created by txHe on 15/11/17.
+//  Copyright © 2015年 txHe. All rights reserved.
 //
 
 import UIKit
